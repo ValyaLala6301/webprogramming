@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en
 
@@ -6,10 +5,12 @@
   <title>Книжный интернет-магазин</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
   <style>
   .fakeimg {
       height: 200px;
@@ -69,15 +70,15 @@
 	</div>
 	</div>
   </div>  
-	
-	
 </nav>
+
+<!-- Основное поле-->
 <div class="container" style="margin-top:30px">
   <div class="row">
     <div class="col-sm-4">
-      <h2>О нашем магазине</h2>
+      <h2><b>О нашем магазине</b></h2>
       <h5>Адрес:</h5>
-      <img src="imag/Map.png" alt="Contact" width="350" height="350">
+      <img src="imag/Map.png" alt="Map" width="350" height="350">
       <p>Наш офис находится по адресу: улица Профессора Попова, 5. </p>
       <h3>Всезнайка</h3>
       <p>Заказывайте книги одним кликом!</p>
@@ -89,37 +90,63 @@
           <a class="nav-link" href="Genres.html">Жанры</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Подборки</a>
+          <a class="nav-link" href="Selection.html">Подборки</a>
         </li>
       </ul>
       <hr class="d-sm-none">
     </div>
-    <div class="col-sm-8">
-
- <h2><b>Маленький принц</b></h2>
-      <h5>Год издания: 	1942</h5>
-      <img src="imag/Prince.jpg" alt="Antuan de Sent-Exuperi" width="200" height="200">
-      <p>Автор(ы): Антуан де Сент-Экзюпери</p>
-     <p> Жанр(ы):  Детская литература, классика, сказка
-      </p>
-      <p><b> Подробное описание:</b></p>
-<p style="text-indent: 25px;">
-В одном из писем к матери Сент-Экзюпери признался: “Мне ненавистны люди, пишущие ради забавы, ищущие эффектов. Надо иметь что сказать”. Ему, романтику неба, не чуравшемуся земных радостей, любившему, по свидетельству друзей, “писать, говорить, петь, играть, докапываться до сути вещей, есть, обращать на себя внимание, ухаживать за женщинами”, человеку проницательного ума со своими достоинствами и недостатками, но всегда стоявшему на защите общечеловеческих ценностей, было “что сказать”. И он это сделал: написал сказку “Маленький принц”, о самом важном в этой жизни, жизни на планете Земля, все чаще такой неласковой, но любимой и единственной.
-<p>
-	<b>
-	Цитата из произведения:</b></p>
-	<p style="text-indent: 25px;">
-	Взрослые посоветовали мне не рисовать змей ни снаружи, ни изнутри, а побольше интересоваться географией, историей, арифметикой и правописанием. Вот как случилось, что шести лет я отказался от блестящей карьеры художника. Потерпев неудачу с рисунками №1 и №2, я утратил веру в себя. Взрослые никогда ничего не понимают сами, а для детей очень утомительно без конца им все объяснять и растолковывать. 
-</p>
-	<p style="text-indent: 25px;">
-Итак, мне пришлось выбирать другую профессию, и я выучился на летчика. Облетел я чуть ли не весь свет. И география, по правде сказать, мне очень пригодилась. Я умел с первого взгляда отличить Китай от Аризоны. Это очень полезно, если ночью собьешься с пути. 
-</p>
-	<p style="text-indent: 25px;">
-На своем веку я много встречал разных серьезных людей. Я долго жил среди взрослых. Я видел их совсем близко. И от этого, признаться, не стал думать о них лучше. 
-	</p>
+	<div class="col-sm-8">
+	<h2 align="center">Корзина</h2>
+		<div id="block-step">
+		 <button id="Clear">Очистить</br></button>
+	</div>
+	<div id="header-list">
+	<div id="head1">Наименование товара</div>
+	<div id="head2">Кол-во</div>
+	<div id="head3">Цена</div>
+	</div>
+	<div class="block-list">
+		<div class="title-basket"> 
+			<p><a href="Prince.html">Маленький принц</a></p>
+			<p class="mini-features">
+				Автор(ы): Антуан де Сент-Экзюпери</br>
+				Жанр(ы): Детская литература, классика, сказка 
+			</p>
+		</div>
+	<div class="count-book"> 
+		<p align="center">-</p>
+		<p align="center"><input class="count-input" maxlength="3" type="text"></p>
+		<p align="center">+</p>
+	</div>
+	<div class="price-product"><h5><span class="span-count">1</span>x<span>600 руб</span></h5><p>600 руб</p></div>
+	</div>
+	</br style="border-bottom:1px solid #E0E0E0;">
+	<div class="block-list">
+		<div class="title-basket"> 
+			<p><a href="Prince.html">Алые паруса</a></p>
+			<p class="mini-features">
+				Автор(ы): Александр Грин</br>
+				Жанр(ы): Детсткая литература, сказка, неоромантизм 		
+			</p>
+		</div>
+	<div class="count-book"> 
+		<p align="center">-</p>
+		<p align="center"><input class="count-input" maxlength="3" type="text"></p>
+		<p align="center">+</p>
+	</div>
+	<div class="price-product"><h5><span class="span-count">1</span>x<span>500 руб</span></h5><p>500 руб</p></div>
+	</div>
+	<div class="bottom-line"> </div>
+	<div class="block-itog">
+		<h2 class="itog"> Итог: <strong>1100 руб</strong></h2>
+		<p align="center" class="button-conf"><a href="">Купить</a></p>
+		</div>
+    </div>
+	
     </div>
   </div>
 </div>
+
 
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p>Книжный интернет-магазин Всезнайка. © 2019</p>
