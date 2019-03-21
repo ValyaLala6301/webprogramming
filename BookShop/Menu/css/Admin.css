@@ -1,0 +1,21 @@
+#order-list{
+	height:50px;
+	border-bottom:1px solid #DBDBDB;
+}
+#order-list >div{
+	float:left;
+	margin-left: 5px;
+	text-align:center;
+	font: bold 13px sans-serif;
+	margin-top:7px;
+}
+
+#order1{width: 50px;}
+#order2{width: 400px;}
+#order3{width: 30px; }
+#order4{width: 140px;}
+#aboutorder{
+	float:center;
+	margin-top:20px;
+	color: Grey;
+	}
